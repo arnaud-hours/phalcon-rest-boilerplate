@@ -14,7 +14,11 @@ class ExportCollection extends ApiCollection
             ->name('Export')
             ->handler(ExportController::class)
 
-            ->endpoint(ApiEndpoint::get('/documentation.json', 'documentation'))
-            ->endpoint(ApiEndpoint::get('/postman.json', 'postman'));
+            ->endpoint(
+                ApiEndpoint::get('/documentation.json', 'documentation')
+                ->name('documentation'))
+            ->endpoint(
+                ApiEndpoint::get('/postman.json', 'postman')
+                ->name('postman'));
     }
 }

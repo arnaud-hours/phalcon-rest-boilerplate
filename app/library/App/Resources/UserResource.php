@@ -29,11 +29,13 @@ class UserResource extends ApiResource {
             )
             ->endpoint(ApiEndpoint::get('/me', 'me')
                 ->allow(AclRoles::USER)
+                ->name('me')
                 ->description('Returns the currently logged in user')
             )
             ->endpoint(ApiEndpoint::post('/authenticate', 'authenticate')
                 ->allow(AclRoles::UNAUTHORIZED)
                 ->deny(AclRoles::AUTHORIZED)
+                ->name('authenticate')
                 ->description('Authenticates user credentials provided in the authorization header and returns an access token')
                 ->exampleResponse([
                     'token' => 'co126bbm40wqp41i3bo7pj1gfsvt9lp6',
