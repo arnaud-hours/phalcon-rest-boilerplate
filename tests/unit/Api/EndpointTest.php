@@ -2,9 +2,9 @@
 
 namespace PhalconRest\Test\Unit\Api;
 
-use PhalconRest\Api\Endpoint;
-use PhalconRest\Constants\HttpMethods;
-use PhalconRest\Constants\PostedDataMethods;
+use PhalconRest\Api\ApiEndpoint as Endpoint;
+use PhalconApi\Constants\HttpMethods;
+use PhalconApi\Constants\PostedDataMethods;
 
 class EndpointTest extends \Codeception\TestCase\Test {
 

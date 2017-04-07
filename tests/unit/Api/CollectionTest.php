@@ -4,9 +4,9 @@ namespace PhalconRest\Test\Unit\Api;
 
 use App\Constants\AclRoles;
 use Phalcon\Acl;
-use PhalconRest\Api\Collection;
-use PhalconRest\Api\Endpoint;
-use PhalconRest\Constants\PostedDataMethods;
+use PhalconRest\Api\ApiCollection as Collection;
+use PhalconRest\Api\ApiEndpoint as Endpoint;
+use PhalconApi\Constants\PostedDataMethods;
 
 class CollectionTest extends \Codeception\TestCase\Test {
 

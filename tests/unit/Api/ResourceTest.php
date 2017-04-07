@@ -4,7 +4,7 @@ namespace PhalconRest\Test\Unit\Api;
 
 use App\Model\Album;
 use App\Transformers\AlbumTransformer;
-use PhalconRest\Api\Resource;
+use PhalconRest\Api\ApiResource as Resource;
 
 class ResourceTest extends \Codeception\TestCase\Test {
 
