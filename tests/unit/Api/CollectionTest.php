@@ -43,8 +43,10 @@ class CollectionTest extends \Codeception\TestCase\Test {
     public function testGetEndpoints() {
 
         $endpoints = [
-            Endpoint::get('/all', 'all'),
+            Endpoint::get('/all', 'all')
+                ->name('all'),
             Endpoint::get('/find/:id', 'find')
+                ->name('find')
         ];
 
         foreach($endpoints as $endpoint) {
